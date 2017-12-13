@@ -78,7 +78,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                 <p>
                     <strong>Copyright &copy; 2017 <a href="">SOCIAL MEDIA</a>
                     <br/>
-                    </strong> {{ trans('adminlte_lang::message.createdby') }} Rika An Rokhim </a>. {{ trans('adminlte_lang::message.seecode') }} <a href="">Github</a>
+                    </strong> {{ trans('adminlte_lang::message.createdby') }} Rika An Rokhim </a>. {{ trans('adminlte_lang::message.seecode') }} <a href="https://github.com/rikaanrokhim/LaraSocMed">Github</a>
                     <br/>
                     SMKN 1 Ponorogo
                 </p>

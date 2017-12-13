@@ -19,15 +19,9 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Lain-lain <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Status</a></li>
+                <li><a href="{{ route('users.edit') }}">Edit Profil</a></li>
                 <li class="divider"></li>
-                <li><a href="#">Foto</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Vidio<a></li>
-                <li class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
+                <li><a href="{{ route('users.create_post') }}">Posting sesuatu </a></li>
               </ul>
             </li>
           </ul>
@@ -57,7 +51,7 @@
                         <ul class="dropdown-menu">
                             <!-- The user image in the menu -->
                             <li class="user-header">
-                                <img src="{{ Gravatar::get($user->email) }}" class="img-circle" alt="User Image" />
+                                <img src="{{ asset(auth()->user()->avatar) }}" class="img-circle" alt="User Image" />
                                 <p>
                                     {{ Auth::user()->name }}
                                 </p>

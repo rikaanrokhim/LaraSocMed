@@ -4,7 +4,6 @@
     {{ trans('adminlte_lang::message.home') }}
 @endsection
 
-
 @section('main-content')
     <div class="content-wrapper">
         <section class="content">
@@ -13,7 +12,7 @@
                     <form action="" method="POST" enctype="multipart/form-data">
                         <div class="box box-primary">
                             <div class="box-body box-profile">
-                                <img class="profile-user-img img-responsive img-circle" src="{{ asset(auth()->user()->avatar) }}" alt="">
+                                <img class="profile-user-img img-responsive img-circle" src="{{ asset(auth()->user()->avatar) }}" alt="User Image" />
                                 <h3 class="profile-username text-center">{{ Auth::user()->name }}</h3>
                                 &nbsp;<a href="{{ route('users.edit') }}" class="btn btn-primary">Edit Profil</a>
                                 &nbsp;<a href="{{ route('users.create_post') }}" class="btn btn-primary">Posting Sesuatu</a>
@@ -44,7 +43,7 @@
                         <div class="active tab-pane" id="activity">
                             <div class="post">
                                 <div class="user-block">
-                                    <img class="img-circle img-bordered-sm" src="{{ asset(auth()->user()->avatar) }}" alt="">
+                                    <img class="img-circle img-bordered-sm" src="{{ asset(auth()->user()->avatar) }}" alt="User Image" />
                                     <span class="username">
                                         <a href="#">{{ Auth::user()->name }}</a>
                                         <a href="#" class="pull-right btn-box-tool"><i class="fa fa-times"></i></a>
@@ -69,7 +68,7 @@
                 </div>
             </div>
         </div>
-      </div>
-</section>
+    </div>
+  </section>
 </div>
 @endsection
