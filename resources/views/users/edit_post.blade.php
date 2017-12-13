@@ -4,7 +4,6 @@
     Edit Post
 @endsection
 
-
 @section('main-content')
     <div class="box">
     <div class="box-header">

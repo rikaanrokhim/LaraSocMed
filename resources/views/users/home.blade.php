@@ -22,7 +22,7 @@
 
                     <div class="box box-primary">
                         <div class="box-header with-border">
-                            <h3 class="box-title">Tentang saya</h3>
+                            <h3 class="box-title">{{Emoji::findByName("smiley")}} &nbsp; Tentang saya</h3>
                         </div>
                         <div class="box-body">
                             <strong><i class="fa fa-circle margin-r-5"></i> {{ Auth::user()->name }} </strong>

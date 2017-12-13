@@ -4,7 +4,6 @@
     Post
 @endsection
 
-
 @section('main-content')
     <div class="box">
     <div class="box-header">
@@ -24,14 +23,20 @@
 
             <div class="form-group has-feedback{{ $errors->has('content') ? ' has-error' : '' }}">
                 <label>Tulis Post</label>
-                <textarea name="content" id="content" class="form-control" rows="3" placeholder="tulis ..."></textarea>
+                <textarea name="content" id="content" class="form-control" rows="2" placeholder="tulis ..."></textarea>
                 @if ($errors->has('content'))
                     <span class="help-block">
                         <p>{{ $errors->first('content') }}</p>
+
                     </span>
                 @endif
             </div>
 
+            <div class="form-group">
+                <p>
+                    {{Emoji::findByName("smiley")}}
+                </p>
+            </div>
             <br>
 
             <a href="{{ route('users.home') }}" class="btn btn-danger" style="margin-left: 1100px;"><i class="fa fa-chevron-left"></i> &nbsp; batal &nbsp;</a>
