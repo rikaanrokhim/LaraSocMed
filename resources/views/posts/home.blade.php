@@ -12,7 +12,7 @@
                     <form action="" method="POST" enctype="multipart/form-data">
                         <div class="box box-primary">
                             <div class="box-body box-profile">
-                                <img class="profile-user-img img-responsive img-circle" src="{{ asset(auth()->user()->avatar) }}" alt="User Image" />
+                                <img class="profile-user-img img-responsive img-circle" src="../storage/{{ $user->avatar }}" alt="User Image" />
                                 <h3 class="profile-username text-center">{{ Auth::user()->name }}</h3>
                                 &nbsp;<a href="{{ route('users.edit') }}" class="btn btn-primary">Edit Profil</a>
                                 &nbsp;<a href="{{ route('users.create_post') }}" class="btn btn-primary">Posting Sesuatu</a>
